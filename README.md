@@ -37,23 +37,7 @@ The **Cook Book** project is a full-stack web application where users can explor
 
 ## 🧑‍💻 **Setup Instructions**
 
-### 1. **Clone the Repository**
-
 Clone the Cook Book repository to your local machine:
 
 ```bash
 git clone https://github.com/ethan123montera123/cookbook.git```
-
-### 2. **Install Dependencies**
-
-Navigate to the project directory and install dependencies for both frontend and backend.
-
-#### For Backend:
-
-```bash
-cd backend
-npm install
-
-cd ../frontend
-npm install
-
