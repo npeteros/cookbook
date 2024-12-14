@@ -1,16 +1,17 @@
-import cors from 'cors';
-import express from 'express';
-import cookieParser from 'cookie-parser';
-import session from 'express-session';
+const cors = require('cors');
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const port = process.env.PORT || 5000;
+const recipeRoutes = require('./routes/recipeRoutes');
+
+const port = 3000;
 const app = express();
 
-app.use(express.json());
 app.use(cors());
-app.use(cookieParser());
-app.use(session());
+app.use(bodyParser.json());
+
+app.use('/recipes', recipeRoutes);
 
 app.listen(port, () => {
-    console.log('Listening to port!' + port);
+    console.log('Listening to port: ' + port);
 });
